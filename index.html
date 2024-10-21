@@ -14,9 +14,9 @@
                 <div class="container about-container">
                     <nav>
                         <ul class="about-navigation">
-                            <li class="about-navigation__item active" id="1"><a href="#">Rostov-on-Don, Admiral</a></li>
-                            <li class="about-navigation__item" id="2"><a href="#">Sochi Thieves</a></li>
-                            <li class="about-navigation__item" id="3"><a href="#">Rostov-on-Don Patriotic</a></li>
+                            <li class="about-navigation__item" data-tab="tab-1" id="tab-01"><a href="#">Rostov-on-Don, Admiral</a></li>
+                            <li class="about-navigation__item" data-tab="tab-2" id="tab-02"><a href="#">Sochi Thieves</a></li>
+                            <li class="about-navigation__item" data-tab="tab-3" id="tab-03"><a href="#">Rostov-on-Don Patriotic</a></li>
                         </ul>
                     </nav>
                     <div class="about about-description">
@@ -24,7 +24,7 @@
                             <h2 class="title description-title">Completed <br> projects</h2>
                             <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
                                  market we have made happy more than 1000 families</p>
-                            <div class="informations active">
+                            <div class="informations active" data-tab-content  id="tab-1">
                                 <div class="information">
                                     <div>
                                         <h3 class="title title-information">City:</h3>
@@ -45,7 +45,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="informations">
+                            <div class="informations" data-tab-content id="tab-2">
                                 <div class="information">
                                     <div>
                                         <h3 class="title title-information">City:</h3>
@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="informations">
+                            <div class="informations" data-tab-content id="tab-3">
                                 <div class="information">
                                     <div>
                                         <h3 class="title title-information">City:</h3>
@@ -89,18 +89,18 @@
                                 </div>
                             </div>
                             <div class="arrows">
-                                <div class="arrow-direction" id="left">&#10229;</div>
-                                <div class="arrow active" id="once">&#8226;</div>
-                                <div class="arrow" id="two">&#8226;</div>
-                                <div class="arrow" id="three">&#8226;</div>
-                                <div class="arrow-direction" id="right">&#10230;</div>
+                                <button class="arrow-direction" id="left">&#10229;</button>
+                                <button class="arrow" data-tab-arrow="tab-1" id="tab1">&#8226;</button>
+                                <button class="arrow" data-tab-arrow="tab-2"  id="tab2">&#8226;</button>
+                                <button class="arrow" data-tab-arrow="tab-3"   id="tab3">&#8226;</button>
+                                <button class="arrow-direction" id="right">&#10230;</button>
                             </div>
                         </div>
     
                         <div class="slider">
-                            <img src="../slider/images/slider_1.jpg" alt="slider_1" >
-                            <img src="../slider/images/slider_2.jpg" alt="slider_2" >
-                            <img src="../slider/images/slider_3.jpg" alt="slider_3" >
+                            <img src="../images/slider_1.jpg" alt="slider_1" data-tab-image id="img1">   
+                            <img src="../images/slider_2.jpg" alt="slider_2" data-tab-image id="img2">
+                            <img src="../images/slider_3.jpg" alt="slider_3" data-tab-image id="img3">
                         </div>
                 </div>     
             </section>

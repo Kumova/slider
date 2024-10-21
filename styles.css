@@ -120,7 +120,7 @@ body * {
 .arrows {
   display: flex;
   flex-direction: row;
-  gap: 30px; 
+ /* gap: 30px; */
   color: white;
   cursor: auto;
   font-weight: 900;
@@ -169,7 +169,26 @@ img {
   object-fit: cover;
 }
 
-.active a{
+button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  width: 45px;
+  
+}
+
+#left:active,
+#right:active  {
+  background-color: rgba(227, 184, 115, 1); 
+}
+
+#tab1,
+#tab2,
+#tab3, {
+  font-size: larger;
+}
+
+.active a {
   color: rgba(227, 184, 115, 1);
   text-decoration: underline;
 }
@@ -179,9 +198,9 @@ img {
   display: block;
 }
 
-.arrow.active {
+/*.arrow.active {
   color: rgba(227, 184, 115, 1);
-}
+}*/
 
 
 .hidden {
